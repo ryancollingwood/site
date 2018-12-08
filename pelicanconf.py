@@ -21,6 +21,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ('Blog', '/index.html'),
     ('Archives', '/archives.html'),
     ('Categories', '/categories.html'),
     ('Tags', '/tags.html'),
@@ -34,6 +35,11 @@ SOCIAL = (
     )
 
 DEFAULT_PAGINATION = 10
+
+STATIC_PATHS = [
+    'images',
+    'favicon.ico',
+    ]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

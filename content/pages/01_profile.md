@@ -1,6 +1,6 @@
-Title: About
-Date: 2010-12-08 21:39
-Category: Biography
+Title: Profile
+Date: 2018-12-08 21:39
+Category: About
 
 #Ryan Collingwood
 
@@ -15,3 +15,8 @@ Current focus is Data Science, from the wrangling, modeling, sampling, digging f
 - Planning – Certified Scrum Master, Project Planning and Estimation, Stakeholder Management
 
 - Software Development - Amazon Web Services, Python C#, Node.js, PHP, Delphi (Object Pascal),Sharepoint, TCL, Lua
+
+You can find me here:
+
+- http://linkedin.com/ryancollingwood
+- https://github.com/ryancollingwood
