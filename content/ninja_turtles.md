@@ -1,6 +1,7 @@
 Title: Which Ninja Turtle Are You?
 Date: 2018-12-08 21:00
 Category: People
+Tags: people, work, performance
 
 Could personality be a reliable metric? Can it be an indicator of individual excellence? Is there an optimal mix of personalities for collaborative efforts? This was a question I investigated in an essay [“Individual and Group Software Developer Personalities”](http://issuu.com/ryancollingwood/docs/software_developers_personalities.d_582b37a634eadb) as part of an university assignment some years back. I keep revisiting this notion as personality is intertwined with concept of identity - which is an inescapable consequence of sentience<sup>[1](#1)</sup>.
 
