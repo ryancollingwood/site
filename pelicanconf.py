@@ -13,7 +13,7 @@ TIMEZONE = 'Australia/Melbourne'
 DEFAULT_LANG = 'English'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
@@ -31,7 +31,7 @@ LINKS = (
 SOCIAL = (
     ('linkedin', 'https://linkedin.com/in/ryancollingwood'),
     ('github', 'https://github.com/ryancollingwood'),
-    ('rss', '//feeds/all.atom.xml'),
+    ('rss', 'feeds/all.atom.xml'),
     )
 
 DEFAULT_PAGINATION = 10
@@ -49,3 +49,9 @@ DISPLAY_PAGES_ON_MENU = True
 PAGE_PATHS = ['pages']
 TYPOGRIFY = True
 THEME = 'Flex'
+
+MARKDOWN = {
+  'extension_configs': {
+    'pyembed.markdown': {}
+  }
+}

@@ -18,5 +18,5 @@ Current focus is Data Science, from the wrangling, modeling, sampling, digging f
 
 You can find me here:
 
-- http://linkedin.com/ryancollingwood
-- https://github.com/ryancollingwood
+- [http://linkedin.com/ryancollingwood](http://linkedin.com/ryancollingwood)
+- [https://github.com/ryancollingwood](https://github.com/ryancollingwood)
