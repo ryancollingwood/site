@@ -70,8 +70,8 @@ FAVICON = 'favicon.ico'
 LOGO = 'avatar.jpg'
 ## first name for nav menu if logo isn't provided
 FIRST_NAME = 'Ryan'
-## google analytics (fake code commented out)
-# GOOGLE_ANALYTICS = 'UA-0011001-1'
+## google analytics
+GOOGLE_ANALYTICS = 'UA-131681263-1'
 ## Twitter username for Twitter Card data
 TWITTER_USERNAME = '@ryancollingwood'
 ## Toggle display of theme attribution in the footer (scroll down and see)
