@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ryan Collingwood'
 SITENAME = 'ryancollingwood.info'
-SITEURL = 'https://ryancollingwood.info'
+SITEURL = 'https://ryancollingwood.info/'
 
 PATH = 'content'
 
@@ -95,7 +95,7 @@ FOURSQUARE = ''
 UNTAPPD = ''
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
-DISQUS_SITENAME = ''
+DISQUS_SITENAME = 'ryancollingwood'
 
 ## Gravatar
 ## Commenting mine out so you can see how the theme looks without one
