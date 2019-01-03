@@ -22,7 +22,7 @@
                     </header>
                     {% if article.image %}
                         <a href="{{ SITEURL }}/{{ article.url }}">
-                            <img src="{{article.image}}" style="max-width: 100%" alt="Read more..."/>
+                            <img src="{{ SITEURL }}/{{article.image}}" style="max-width: 100%" alt="Read more..."/>
                         </a>
                     {% endif %}
                     <div class="summary">{{ article.summary }} </div>
