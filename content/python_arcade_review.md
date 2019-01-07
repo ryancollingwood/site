@@ -1,8 +1,9 @@
-Title: Python Arcade Review
-Date: 2018-12-16 10:30
-Category: Code
-Tags: code, python, games
-Image: images/python_arcade_review/preview.gif
+title: Python Arcade Review
+date: 2018-12-16 10:30
+category: Code
+tags: code, python, games
+cover_image: images/python_arcade_review/preview.gif
+description: For a bit of fun I made a simple 2-d game using the Arcade Python library. 
 
 ## TL;DR
 

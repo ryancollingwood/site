@@ -1,8 +1,9 @@
 Title: Which Ninja Turtle Are You?
-Date: 2018-12-08 21:00
-Category: People
-Tags: people, work, performance
-Image: images/ninja_turtles/pizza_performance.png
+date: 2018-12-08 21:00
+category: People
+tags: people, work, performance
+cover_image: images/ninja_turtles/pizza_performance.png
+description: Proposing a new framework for thinking how to work with others? Stay with-in the pizza of performance! Some minor wordiness about personality profiling (why it falls short in measuring the dynamic nature of people) and anthropomorphic reptiles.
 
 Could personality be a reliable metric? Can it be an indicator of individual excellence? Is there an optimal mix of personalities for collaborative efforts? This was a question I investigated in an essay [“Individual and Group Software Developer Personalities”](http://issuu.com/ryancollingwood/docs/software_developers_personalities.d_582b37a634eadb) as part of an university assignment some years back. I keep revisiting this notion as personality is intertwined with concept of identity - which is an inescapable consequence of sentience<sup>[1](#1)</sup>.
 
@@ -13,7 +14,7 @@ My understanding of personality and its use as a metric is that it can at best i
 
 Considering all of this does beg the question: why try to measure or specify it?
 
-Performance and Personality
+# Performance and Personality
 The aforementioned question is another matter entirely, however for the purposes of this discussion, let’s consider the following:
 
 ![Performance = Capacity + Willingness + Opportunity](images/ninja_turtles/performance.png)

@@ -1,6 +1,6 @@
-Title: Profile
-Date: 2018-12-08 21:39
-Category: About
+title: Profile
+date: 2018-12-08 21:39
+category: About
 
 #Ryan Collingwood
 

@@ -13,7 +13,7 @@
 {% block twittercard %}
 {% if article.cover_image %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ article.cover_image }}">
+<meta name="twitter:image" content="{{ SITEURL }}/{{ article.cover_image }}">
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
 {% elif GRAVATAR %}
 <meta name="twitter:card" content="summary">
@@ -32,7 +32,7 @@
 <meta property="og:title" content="{{ SITENAME }} | {{ article.title }}" />
 <meta property="og:description" content="{{ article.description }}" />
 {% if article.cover_image %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ article.cover_image }}" />
+<meta property="og:image" content="{{ SITEURL }}/{{ article.cover_image }}" />
 {% endif %}
 {% endblock ogtags %}
 
