@@ -11,9 +11,9 @@
 
 {% endblock %}
 {% block twittercard %}
-{% if page.image %}
+{% if page.cover_image %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ page.image }}">
+<meta name="twitter:image" content="{{ SITEURL }}/images/{{ page.cover_image }}">
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
 {% elif GRAVATAR %}
 <meta name="twitter:card" content="summary">
@@ -31,8 +31,8 @@
 <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
 <meta property="og:title" content="{{ SITENAME }} | {{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
-{% if page.image %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ page.image }}" />
+{% if page.cover_image %}
+<meta property="og:image" content="{{ SITEURL }}/images/{{ page.cover_image }}" />
 {% endif %}
 {% endblock ogtags %}
 {% block content %}
