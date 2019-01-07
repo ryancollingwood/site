@@ -20,9 +20,9 @@
                             <h2>{{ article.title }}</h2>
                         </a>
                     </header>
-                    {% if article.image %}
+                    {% if article.cover_image %}
                         <a href="{{ SITEURL }}/{{ article.url }}">
-                            <img src="{{ SITEURL }}/{{article.image}}" style="max-width: 100%" alt="Read more..."/>
+                            <img src="{{ SITEURL }}/{{article.cover_image}}" style="max-width: 100%" alt="Read more..."/>
                         </a>
                     {% endif %}
                     <div class="summary">{{ article.summary }} </div>
