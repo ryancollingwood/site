@@ -37,11 +37,29 @@ So once more we put paint to board, and come up with:
 > - Banana 
 > - Vanilla
 
-## Implications
+We've made the sign but it look a bit of back and forth. 
 
-Now while this is a trite example, we can already see how a lack of specificity when detailing options can lead to inefficiency. Furthermore that our attempts to introduce specificity without validation lead to further disappointment.
+## So how could we have done better?
+
+The lack of specificity when detailing options can lead to re-work. 
+
+The threat of having retread may lead to attempts to introduce specificity without validation, which will lead to further disappointment.
+
+Now while this is a trite example, as the concepts (thus the *rules*) of milkshakes is one most are familiar with. If we were detailing the large hadron collider, I know I would be out of my depth. I wouldn't know any of the rules. *So what are we to do?*
+
+Thankfully there are some heuristics to help us make better sense of our options.
+
+## So what kind of rules are there?
+
+- **Optionality**, do I have to make a choice?
+- **Cardinality**, how many options can I have at a time
+- **Mutual Exclusivity**, if I can have more than one option at at time, are there any combinations that are prohibited?
+- **Equivalence**, how similar are the options? If there is a great variance then perhaps we need to reconsider the exclusivity of the options.
+
 
 But in a more complex context, where those tasked with implementing lack domain knowledge, these ambigiuities ...
+
+### Intependencies
 
 ## What have we learnt
 
