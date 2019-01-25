@@ -1,4 +1,11 @@
-## Let's have some options
+title: On detailings options
+date: 2018-12-16 10:30
+category: Requirements
+tags: requirements, analysis
+cover_image: images/options/oxford_comma.jpg
+description: Detailing the specifics of options within a context is vital to meeting expectations. Here are some heuristics and lessons I've learnt doing just that. 
+
+## The Devil is in the... options
 
 Pretend we're sign writers commissioned to write a menu of milkshake flavours. We've received our instructions on a note.
 
@@ -49,19 +56,18 @@ Now while this is a trite example, as the concepts (thus the *rules*) of milksha
 
 Thankfully there are some heuristics to help us make better sense of our options.
 
-## So what kind of rules are there?
+## Some heuristics for describing options
 
-- **Optionality**, do I have to make a choice?
-- **Cardinality**, how many options can I have at a time
+- **Mandatory**, do I have to make a choice from the available options? Can I skip over the choice and still get a complete experience?
+- **Cardinality**, how many options can I have at a time? Is is limited to only one choice or can I have multiple choices?
+- **Repetition**, can I make multiple selections of a choice? For example chocolate compared to double chocolate? 
 - **Mutual Exclusivity**, if I can have more than one option at at time, are there any combinations that are prohibited?
-- **Equivalence**, how similar are the options? If there is a great variance then perhaps we need to reconsider the exclusivity of the options.
+- **Equivalence**, how similar are the options? If there is a great variance then perhaps we need to reconsider the way we've structured the "thing" we're describing.
 
+## Ok, but what was that tangent about Oxford Commas earlier?
 
-But in a more complex context, where those tasked with implementing lack domain knowledge, these ambigiuities ...
+Glad you asked.
 
-### Intependencies
+## In summary
 
-## What have we learnt
-
-- The articulation of intent informs the implementation, be it verbally or transcribed.
-- I
+The articulation of intent informs the implementation, be it verbally or transcribed. Our prior knowledge of a domain will inform our attempts to control any ambiguity between intent and implementation. However we don't need to have domain knowledge to achieve clarity when tasked with communicating options. Rather there are some heuristics we can apply to tease out the details and achieve specificity.
