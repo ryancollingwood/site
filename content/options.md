@@ -11,46 +11,36 @@ Pretend we're sign writers commissioned to write a menu of milkshake flavours. W
 
 > *The flavours are Strawberry, Chocolate, Banana and Vanilla.* 
 
-I try to not be a pendant about many things but the presence of an [Oxford Comma](https://en.wikipedia.org/wiki/Serial_comma) (aka. Serial Comma) in my experience creates clarity more-so than the absence thereof.
-
-![The Oxford Comma](images/options/oxford_comma.jpg)
-
-So we do our continue to write the sign as we understand the instructions.
+After some painting we present the sign as we've understand the instructions.
 
 > Milkshake Flavours:
 > - Strawberry
 > - Chocolate
 > - Banana and Vanilla
 
-So the milkshake shop owner receives the sign and is disappointed that the sign isn't what they expected. As there appear to be only three options on the sign:
+However milkshake shop owner is disappointed that the sign isn't what they expected. As there appear to be only three options on the sign. After a discussion we realise our error, that the '*and*' between *Banana and Chocolate* could have been represented like this: 
 
 > *The flavours are Strawberry, Chocolate, Banana, and Vanilla.*
 
-We have to dispose of the sign we've crafted, returning to our workshop. This time we decide to take some initiative in rewriting the sign:
+## Oxford Comma
 
-> Milkshake Flavours, choose one of:
+As the saying goes, the *medium is the message* and given that the intent was written down the semantics of grammar notably: 
+ - Commas to denote participation in a group.
+ - The conjugative effects of *'and'*.
+
+However there are two very different to understand this representation of the intent.
+
+I try to not be a pendant about many things but the presence of an [Oxford Comma](https://en.wikipedia.org/wiki/Serial_comma) (aka. Serial Comma) in my experience creates clarity more-so than the absence thereof.
+
+![The Oxford Comma](images/options/oxford_comma.jpg)
+
+> Milkshake Flavours:
 > - Strawberry
 > - Chocolate
 > - Banana 
 > - Vanilla
-
-Again we present the sign to shop owner, who is even more upset. As now the sign reads as if it's not possible to half and half flavours.
-
-So once more we put paint to board, and come up with:
-
-> Milkshake Flavours, choose up to two of:
-> - Strawberry
-> - Chocolate
-> - Banana 
-> - Vanilla
-
-We've made the sign but it look a bit of back and forth. 
 
 ## So how could we have done better?
-
-The lack of specificity when detailing options can lead to re-work. 
-
-The threat of having retread may lead to attempts to introduce specificity without validation, which will lead to further disappointment.
 
 Now while this is a trite example, as the concepts (thus the *rules*) of milkshakes is one most are familiar with. If we were detailing the large hadron collider, I know I would be out of my depth. I wouldn't know any of the rules. *So what are we to do?*
 
