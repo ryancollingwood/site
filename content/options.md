@@ -1,5 +1,5 @@
 title: On Detailing Options
-date: 2018-12-16 10:30
+date: 2019-01-30 21:15
 category: Requirements
 tags: requirements, analysis
 cover_image: images/options/oxford_comma.jpg
@@ -13,7 +13,7 @@ Pretend we're sign writers commissioned to write a menu of milkshake flavours. W
 
 After some painting we present the sign as we've understand the instructions.
 
-![Milkshake Flavours: Strawberry, Chocolate, Banana and Vanilla.](images/options/sign.png)
+![Milkshake Flavours: Strawberry, Chocolate, Banana and Vanilla.]({static}/images/options/sign.png)
 
 However milkshake shop owner is disappointed that the sign isn't what they expected. As there appear to be only three options on the sign. After a discussion we realise our error, that the '*and*' between *Banana and Chocolate* could have been represented like this: 
 
@@ -21,7 +21,7 @@ However milkshake shop owner is disappointed that the sign isn't what they expec
 
 ## Oxford Comma
 
-![The Oxford Comma](images/options/oxford_comma.jpg)*image sourced from:  https://knowyourmeme.com/photos/946417-oxford-comma*
+![The Oxford Comma]({static}/images/options/oxford_comma.jpg)*image sourced from:  https://knowyourmeme.com/photos/946417-oxford-comma*
 
 As the saying goes, the *medium is the message* and given that the intent was written down the semantics of grammar notably: 
  - Commas to denote participation in a group.
@@ -33,7 +33,7 @@ I try to not be a pendant about many things but the presence of an [Oxford Comma
 
 It's a simple example that even when we believe we're being reasonably specific, ambiguities can creep in. 
 
-![Milkshake Flavours: Strawberry, Chocolate, Banana, Vanilla.](images/options/sign_revised.png)
+![Milkshake Flavours: Strawberry, Chocolate, Banana, Vanilla.]({static}/images/options/sign_revised.png)
 
 ## So how could we have done better?
 

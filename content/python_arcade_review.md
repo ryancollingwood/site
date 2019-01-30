@@ -17,7 +17,7 @@ description: For a bit of fun I made a simple 2-d game using the Arcade Python l
 
 ## Why?
 
-![Preview of Rabbit Herder game](images/python_arcade_review/preview.gif)
+![Preview of Rabbit Herder game]({static}/images/python_arcade_review/preview.gif)
 
 Sometimes you need a break from giving computers instructions such as: *"display the sum of expenses for the last month"* or *"download a file from this place and put it in this other place"*. In an effort to escape this tedium I figured it would be a refreshing break to give the computer different instructions: *"draw a square and move 5 pixel to the right every 1 second"*.
 Additionally learning the in and outs of a Python library for drawing and animating shapes could be helpful for data visualisation purposes in the future.

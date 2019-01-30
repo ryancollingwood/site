@@ -17,7 +17,7 @@ Considering all of this does beg the question: why try to measure or specify it?
 # Performance and Personality
 The aforementioned question is another matter entirely, however for the purposes of this discussion, let’s consider the following:
 
-![Performance = Capacity + Willingness + Opportunity](images/ninja_turtles/performance.png)
+![Performance = Capacity + Willingness + Opportunity]({static}/images/ninja_turtles/performance.png)
 
 `Performance = Capacity + Willingness + Opportunity`<sup>[8](#8)</sup>
 
