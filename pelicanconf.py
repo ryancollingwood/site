@@ -21,10 +21,10 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Blog', '/index.html'),
-    ('Archives', '/archives.html'),
-    ('Categories', '/categories.html'),
-    ('Tags', '/tags.html'),
+    ('Blog', '/'),
+    ('Archives', '/archives'),
+    ('Categories', '/categories'),
+    ('Tags', '/tags'),
     )
 
 # Social widget
@@ -80,8 +80,8 @@ ATTRIBUTION = False
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
 MENUITEMS = [
-    ('Profile', '/pages/profile.html'),
-    ('Blog', '/index.html')
+    ('Profile', '/profile'),
+    ('Blog', '/')
     ]
 ## Social icons for footer
 LINKEDIN = 'https://linkedin.com/in/ryancollingwood'
