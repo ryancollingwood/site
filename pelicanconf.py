@@ -76,7 +76,7 @@ GOOGLE_ANALYTICS = 'UA-131681263-1'
 TWITTER_USERNAME = '@ryancollingwood'
 ## Toggle display of theme attribution in the footer (scroll down and see)
 ## Attribution is appreciated but totally fine to turn off!
-ATTRIBUTION = True
+ATTRIBUTION = False
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
 MENUITEMS = [
@@ -100,3 +100,43 @@ DISQUS_SITENAME = 'ryancollingwood'
 ## Gravatar
 ## Commenting mine out so you can see how the theme looks without one
 GRAVATAR = 'https://www.gravatar.com/avatar/ea97dc5b577a9ea291c33cbf23cb8a32?s=256'
+
+
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = ARTICLE_URL
+ARTICLE_LANG_URL = '{category}/{slug}-{lang}'
+ARTICLE_LANG_SAVE_AS = ARTICLE_LANG_URL
+DRAFT_URL = 'drafts/{slug}'
+DRAFT_PAGE_URL = 'drafts/{slug}'
+DRAFT_PAGE_SAVE_AS = DRAFT_PAGE_URL
+DRAFT_PAGE_LANG_URL = 'drafts/pages/{slug}-{lang}'
+DRAFT_PAGE_LANG_SAVE_AS = DRAFT_PAGE_LANG_URL
+DRAFT_SAVE_AS = DRAFT_URL
+DRAFT_LANG_SAVE_AS = 'drafts/{slug}-{lang}'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = PAGE_URL
+PAGE_LANG_URL = 'pages/{slug}-{lang}'
+PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}'
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = CATEGORY_URL
+CATEGORIES_SAVE_AS  = 'categories'
+TAG_URL = 'tag/{slug}'
+TAG_SAVE_AS = TAG_URL
+TAGS_SAVE_AS = 'tags'
+AUTHOR_URL = 'author'
+AUTHOR_SAVE_AS = AUTHOR_URL
+AUTHORS_SAVE_AS = 'authors'
+YEAR_ARCHIVE_SAVE_AS = ''
+MONTH_ARCHIVE_SAVE_AS = ''
+MONTH_ARCHIVE_URL = ''
+DAY_ARCHIVE_SAVE_AS = ''
+DAY_ARCHIVE_URL = ''
+ARCHIVES_SAVE_AS = 'archives'
+YEAR_ARCHIVE_SAVE_AS = ''
+MONTH_ARCHIVE_SAVE_AS = ''
+DAY_ARCHIVE_SAVE_AS = ''
+INDEX_SAVE_AS = 'index.html'
+
+
+
+
