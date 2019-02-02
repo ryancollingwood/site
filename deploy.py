@@ -2,6 +2,7 @@ from tasks import rebuild
 import boto3
 import os
 from datetime import datetime
+import subprocess
 
 path = "output"
 bucket_name = "ryancollingwood.info"
@@ -9,6 +10,8 @@ cloud_front_distribution_id = "E37U5FWWDNBQTH"
 
 s3 = boto3.resource('s3')
 s3_client = boto3.client('s3')
+
+subprocess.call('pelican', shell=True)
 
 invalidate_files = []
 
@@ -27,7 +30,10 @@ for root, subdirs, files in os.walk(path):
 
             if file_extension in ["", ".html", ".htm"]:
                 invalidate_files.append(target_file)
-                content_type = "text/html"                
+                content_type = "text/html"           
+            elif file_extension in [".css"]:
+                invalidate_files.append(target_file)
+                content_type = "text/css"
 
             print(target_file)
 
