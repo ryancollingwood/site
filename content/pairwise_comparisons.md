@@ -55,7 +55,6 @@ I’ve included a toy implementation of a pairwise comparison process in Python 
 
     import numpy as np
     import pandas as pd
-    import json
     from random import shuffle, seed
 
     from itertools import combinations_with_replacement
