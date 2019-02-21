@@ -4,7 +4,6 @@ category: Requirements
 tags: requirements, analysis
 cover_image: images/pairwise_comparisons/which_floof.gif
 description: Breaking your choices down to series of pairwise comparisons can facilitate making value based decisions.
-status: draft
 
 Sometimes choices are easy. Cheese burger or double cheese burger? Easy, how hungry are you? 
 
@@ -54,7 +53,6 @@ Once you’ve chosen your preferred option for every pair tally up the the numbe
 
 I’ve included a toy implementation of a pairwise comparison process in Python below:
 
-    :::python
     import numpy as np
     import pandas as pd
     import json
@@ -113,6 +111,5 @@ I’ve included a toy implementation of a pairwise comparison process in Python 
     print("scores")
     display(df)
     print("")
-
 
 Go forth! Divide and conquer!
