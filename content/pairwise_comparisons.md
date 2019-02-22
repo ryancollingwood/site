@@ -53,25 +53,22 @@ Once you’ve chosen your preferred option for every pair tally up the the numbe
 
 I’ve included a toy implementation of a pairwise comparison process in Python below:
 
+    :::python
     import numpy as np
     import pandas as pd
     from random import shuffle, seed
 
     from itertools import combinations_with_replacement
 
-    print("Enter the options as a comma seperated string - e.g. dog, cat, pony")
-    options = [x.strip() for x in input().split(",")]
+    print("Enter the options as a comma separated string - e.g. dog, cat, pony")
+    entered_options = input()
+    if not entered_options:
+        entered_options = "Option 1, Option 2, Option 3, Option 4"
+
+    options = [x.strip() for x in entered_options.split(",")]
 
     # let's shuffle the options to keep things interesting
     shuffle(options)
-
-    for index, lhs_option in enumerate(options):
-        # `other_options` are the options that appear (in order)
-        # after our current `lhs_option`
-        other_options = options[index+1:]
-        
-        for rhs_option in other_options:
-            print(lhs_option,"OR", rhs_option)
 
     # the for loop above as a list comprehension using 'combinations_with_replacement'
     pairwise_combinations = [x for x in list(combinations_with_replacement(options, 2)) if x[0] != x[1]]
@@ -94,21 +91,44 @@ I’ve included a toy implementation of a pairwise comparison process in Python 
     df = get_blank_scores(options)
 
     for pair in pairwise_combinations:
-        
+
         lhs = pair[0]
         rhs = pair[1]
-        
+
         print(f"(a) {lhs} or (b) {rhs}?")
         result = input(">")
         
+        # where we choose the lhs over the rhs
+        # +1 to it's own row/column
+        # whereas if we choose rhs over lhs
+        # +1 to it's row but the rhs column
         if result == "a":
-            df.loc[lhs][lhs] += 1
+            df.loc[lhs, lhs] += 1
         elif result == "b":
-            df.loc[lhs][rhs] += 1
+            df.loc[lhs, rhs] += 1
 
     print("")
-    print("scores")
-    display(df)
+    print("=======================")
+    print("Scores")
+    print(df)
     print("")
+
+    if len(best_options) == 0:
+        outcome = "No best option after comparing all pairwise combinations"
+    elif len(best_options) == len(options):
+        if max_score > 0:
+            outcome = "All options were rated equally, consider some other criteria to evaluate the options by."
+        else:
+            outcome = "It seems like you didn't vote for any options"
+    elif len(best_options) > 1:
+        outcome = "We have a tie!"
+    else:
+        outcome = "We have a winner!"
+
+    print("=======================")
+    print(outcome)
+    print("")
+    for x in dict(best_options):
+        print(x, best_options[x])
 
 Go forth! Divide and conquer!

@@ -51,8 +51,11 @@ TYPOGRIFY = True
 
 MARKDOWN = {
   'extension_configs': {
-    'pyembed.markdown': {}
-  }
+    'pyembed.markdown': {},
+    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'markdown.extensions.extra': {},
+    'markdown.extensions.meta': {},
+    }
 }
 
 PLUGIN_PATHS = ['plugins']
