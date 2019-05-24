@@ -60,88 +60,89 @@ I’ve included a toy implementation of a pairwise comparison process in Python 
 
 ![Demo of pairwise comparison application]({static}/images/pairwise_comparisons/pairwise_toy_demo.gif)
 
-    :::python
-    import numpy as np
-    import pandas as pd
-    from random import shuffle, seed
+```python  
+import numpy as np
+import pandas as pd
+from random import shuffle, seed
 
-    from itertools import combinations_with_replacement
+from itertools import combinations_with_replacement
 
-    print("Enter the options as a comma separated string - e.g. dog, cat, pony")
-    entered_options = input()
-    if not entered_options:
-        entered_options = "Option 1, Option 2, Option 3, Option 4"
+print("Enter the options as a comma separated string - e.g. dog, cat, pony")
+entered_options = input()
+if not entered_options:
+    entered_options = "Option 1, Option 2, Option 3, Option 4"
 
-    options = [x.strip() for x in entered_options.split(",")]
+options = [x.strip() for x in entered_options.split(",")]
 
-    # let's shuffle the options to keep things interesting
-    shuffle(options)
+# let's shuffle the options to keep things interesting
+shuffle(options)
 
-    # the for loop above as a list comprehension using 'combinations_with_replacement'
-    pairwise_combinations = [x for x in list(combinations_with_replacement(options, 2)) if x[0] != x[1]]
+# the for loop above as a list comprehension using 'combinations_with_replacement'
+pairwise_combinations = [x for x in list(combinations_with_replacement(options, 2)) if x[0] != x[1]]
 
-    # To save our scores let's construct an empty dataframe
+# To save our scores let's construct an empty dataframe
 
-    def get_blank_scores(options):
-        return pd.DataFrame(
-            np.zeros((len(options), len(options))),
-            columns = options,
-            index = options
-        )
+def get_blank_scores(options):
+    return pd.DataFrame(
+        np.zeros((len(options), len(options))),
+        columns = options,
+        index = options
+    )
 
-    # again to keep things interesting let's shuffle the order of the pairwise comparisons.
+# again to keep things interesting let's shuffle the order of the pairwise comparisons.
 
-    shuffle(pairwise_combinations)
+shuffle(pairwise_combinations)
 
-    # Now for each pair we ask which option is preferred.
+# Now for each pair we ask which option is preferred.
 
-    df = get_blank_scores(options)
+df = get_blank_scores(options)
 
-    for pair in pairwise_combinations:
+for pair in pairwise_combinations:
 
-        lhs = pair[0]
-        rhs = pair[1]
+    lhs = pair[0]
+    rhs = pair[1]
 
-        print(f"(a) {lhs} or (b) {rhs}?")
-        result = input(">")
-        
-        # where we choose the lhs over the rhs
-        # +1 to it's own row/column
-        # whereas if we choose rhs over lhs
-        # +1 to it's row but the rhs column
-        if result == "a":
-            df.loc[lhs, lhs] += 1
-        elif result == "b":
-            df.loc[lhs, rhs] += 1
+    print(f"(a) {lhs} or (b) {rhs}?")
+    result = input(">")
+    
+    # where we choose the lhs over the rhs
+    # +1 to it's own row/column
+    # whereas if we choose rhs over lhs
+    # +1 to it's row but the rhs column
+    if result == "a":
+        df.loc[lhs, lhs] += 1
+    elif result == "b":
+        df.loc[lhs, rhs] += 1
 
-    print("")
-    print("=======================")
-    print("Scores")
-    print(df)
-    print("")
+print("")
+print("=======================")
+print("Scores")
+print(df)
+print("")
 
-    # lets summarise and get the highest scoring option(s)
-    results = df.sum()
-    max_score = results.max()
-    best_options = results[results == max_score]
+# lets summarise and get the highest scoring option(s)
+results = df.sum()
+max_score = results.max()
+best_options = results[results == max_score]
 
-    # display a message about the scoring results
-    if len(best_options) == 0:
-        outcome = "No best option after comparing all pairwise combinations"
-    elif len(best_options) == len(options):
-        if max_score > 0:
-            outcome = "All options were rated equally, consider some other criteria to evaluate the options by."
-        else:
-            outcome = "It seems like you didn't vote for any options"
-    elif len(best_options) > 1:
-        outcome = "We have a tie!"
+# display a message about the scoring results
+if len(best_options) == 0:
+    outcome = "No best option after comparing all pairwise combinations"
+elif len(best_options) == len(options):
+    if max_score > 0:
+        outcome = "All options were rated equally, consider some other criteria to evaluate the options by."
     else:
-        outcome = "We have a winner!"
+        outcome = "It seems like you didn't vote for any options"
+elif len(best_options) > 1:
+    outcome = "We have a tie!"
+else:
+    outcome = "We have a winner!"
 
-    print("=======================")
-    print(outcome)
-    print("")
-    for x in dict(best_options):
-        print(x, "with", best_options[x], "votes")
+print("=======================")
+print(outcome)
+print("")
+for x in dict(best_options):
+    print(x, "with", best_options[x], "votes")
+```    
 
 Go forth! Divide and conquer!

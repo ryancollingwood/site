@@ -11,7 +11,7 @@ cloud_front_distribution_id = "E37U5FWWDNBQTH"
 s3 = boto3.resource('s3')
 s3_client = boto3.client('s3')
 
-subprocess.call('pelican', shell=True)
+subprocess.call('pelican -s publishconf.py', shell=True)
 
 invalidate_files = []
 

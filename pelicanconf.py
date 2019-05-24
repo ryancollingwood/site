@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ryan Collingwood'
 SITENAME = 'ryancollingwood.info'
-SITEURL = 'https://ryancollingwood.info'
+SITEURL = ''
+RELATIVE_URLS = True
 
 PATH = 'content'
 
@@ -52,14 +53,22 @@ TYPOGRIFY = True
 MARKDOWN = {
   'extension_configs': {
     'pyembed.markdown': {},
-    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'markdown.extensions.codehilite': {
+        'css_class': 'highlight',
+        'linenums': False,
+        'use_pygments': True
+        },
     'markdown.extensions.extra': {},
     'markdown.extensions.meta': {},
-    }
+    },
+    'output_format': 'html5',
 }
 
-PLUGIN_PATHS = ['plugins']
-PLUGINS = ["plantuml"]
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = [
+    "plantuml",
+    "better_codeblock_line_numbering",
+    ]
 
 # Theme Settings
 THEME = 'brutalist'
