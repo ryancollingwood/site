@@ -14,8 +14,10 @@ from pelicanconf import *
 SITEURL = 'https://ryancollingwood.info'
 RELATIVE_URLS = False
 
+print("SITEURL", SITEURL)
+
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+CATEGORY_FEED_ATOM = None
 
 DELETE_OUTPUT_DIRECTORY = True
 
