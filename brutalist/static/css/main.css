@@ -208,7 +208,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, object, iframe, h1, h2,
 h3, h4, h5, h6, p, blockquote, pre, abbr, address,
-cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+cite, del, dfn, em, img, ins, kbd, q, samp, small,
 strong, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody, tfoot, thead, tr,
 th, td, time, mark, audio, video {
@@ -229,13 +229,24 @@ ol, ul {
   list-style: none;
 }
 
-blockquote, q {
-  quotes: none;
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 
 ins {
