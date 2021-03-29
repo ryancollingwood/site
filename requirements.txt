@@ -22,7 +22,7 @@ pelican==4.0.1
 pyasn1==0.4.4
 pyembed==1.3.3
 pyembed-markdown==1.1.0
-Pygments==2.4.1
+Pygments==2.7.4
 pymdown-extensions==6.0
 python-dateutil==2.7.5
 pytz==2018.7
